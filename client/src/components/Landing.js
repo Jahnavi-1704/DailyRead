@@ -24,31 +24,58 @@ function Landing() {
         });
 
         google.accounts.id.renderButton(
-            document.getElementById('signInDiv'),
-            {theme: "outline", size: "large"}
+            document.getElementById('signInDiv')
         );
 
     }, []);
 
     return (
         <div>
-            <div style={{paddingLeft: '70px', display: 'flex'}}>
-                <img src={image} style={{flex: '0.5', paddingTop: '80px'}}/>
-                <div style={{flex: '0.5', paddingLeft: '100px', paddingTop: '120px'}}>
-                    <h1 style={{color: 'red', fontFamily: 'Akaya Kanadaka', paddingLeft: '110px'}}>
-                        Daily<span style={{color: 'black'}}>Read</span>
-                    </h1>
-                    <text style={{fontFamily: 'Garamond', fontSize: '20px', paddingLeft: '50px'}}>Stay updated on your favourite topics</text>
+            <div style={{display: 'flex', paddingLeft: '90px', paddingTop: '30px'}}>
+                <div style={{flex: '0.3'}}>
+                    <text style={{color: 'red', fontFamily: 'Arial', fontSize: '20px'}}>Daily<span style={{color: 'black'}}>Read</span></text>
+                </div>
 
-                    <div id="signInDiv" style={{paddingTop: '25px', paddingLeft: '100px', paddingRight: '100px'}}>
+                <div style={{paddingLeft: '600px'}}>
+                    <text style={{fontFamily: 'Garamond'}}>Product</text>
+                </div>
 
+                <div style={{paddingLeft: '50px'}}>
+                    <text style={{fontFamily: 'Garamond'}}>Pricing</text>
+                </div>
+
+                <div style={{paddingLeft: '50px'}}>
+                    <text style={{fontFamily: 'Garamond'}} onClick={() => window.location.replace('https://github.com/Jahnavi-1704/DailyRead')}>Github</text>
+                </div>
+
+                <div style={{paddingLeft: '50px'}}>
+                    <Button variant="outlined" color="error" size="small" onClick={() => {navigate('/dashboard', {state: {logged: false}})}}>Try for free</Button>
+                </div>
+
+                <div style={{paddingLeft: '30px'}} id="signInDiv">
+                    <Button variant="contained" color="error" size="small">Log in</Button>
+                </div>
+
+            </div>
+            <div style={{paddingLeft: '70px', display: 'flex', paddingRight: '70px'}}>
+                <div style={{flex: '0.4', paddingTop: '100px'}}>
+                    <div style={{paddingLeft: '15px', paddingRight: '50px'}}>
+                        <text style={{fontFamily: 'Arial', fontSize: '50px', fontWeight: 'bolder'}}>Stay up to date on your favourite topics.</text>
                     </div>
-                    <text style={{paddingTop: '5px', paddingLeft: '190px', fontFamily: 'Garamond', fontSize: '20px'}}>or</text>
-                    <div style={{paddingTop: '5px', paddingLeft: '95px'}}>
+
+                    <div style={{paddingLeft: '15px', paddingRight: '50px', paddingTop: '25px'}}>
+                        <text style={{fontFamily: 'Publica Sans Regular', fontSize: '18px', color: 'grey'}}>
+                            Create a curated list of articles you are interested in and save them for future reading. Try it now!
+                        </text>
+                    </div>
+
+                    {/*<div id="signInDiv" style={{paddingTop: '25px', paddingLeft: '100px', paddingRight: '100px'}}></div>*/}
+                    <div style={{paddingTop: '25px', paddingLeft: '15px'}}>
                         <Button variant="contained" color="error" size="large" endIcon={<ArrowForwardIosIcon />} onClick={() => {navigate('/dashboard', {state: {logged: false}})}}>Start browsing</Button>
                     </div>
 
                 </div>
+                <img src={image} style={{flex: '0.6', paddingTop: '30px'}}/>
             </div>
 
         </div>
