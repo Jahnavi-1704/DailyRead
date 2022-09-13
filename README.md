@@ -1,13 +1,11 @@
 # DailyRead
 A web application to stay on top of your favourite news!
 
-### Demo Video
-
-### 1. Features:
-- Users can casually browse through updated world news on a given topic
-- Users can use multiple filters to enhance their search results
-- Upon login with Google, users can subscribe to interested articles for later viewing
-- Users can view their saved searches
+### Description
+- Browse through updated world news on a given topic
+- Use multiple filters to enhance search results
+- Subscribe to interested articles by logging in with Google Auth
+- View saved searches
 
 ### 2. Tech Stack: 
 - NodeJS
@@ -17,6 +15,8 @@ A web application to stay on top of your favourite news!
 - News API
 - Google OAuth
 - JWT
+
+### ScreenShots
 
 ### 3. How to run this app on your local machine?
 - Clone this repository locally
