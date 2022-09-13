@@ -7,6 +7,8 @@ A web application to stay on top of your favourite news!
 - Subscribe to interested articles by logging in with Google Auth
 - View saved searches
 
+## ScreenShots
+
 ## Tech Stack: 
 - NodeJS
 - Express
@@ -15,8 +17,6 @@ A web application to stay on top of your favourite news!
 - News API
 - Google OAuth
 - JWT
-
-## ScreenShots
 
 ## How to run this app on your local machine?
 - Clone this repository locally
