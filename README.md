@@ -9,6 +9,12 @@ A web application to stay on top of your favourite news!
 
 ## ScreenShots
 
+<img src="https://github.com/Jahnavi-1704/DailyRead/blob/master/screenshots/capture.png" width="500">
+
+<img src="https://github.com/Jahnavi-1704/DailyRead/blob/master/screenshots/capture1.png" width="500">
+
+<img src="https://github.com/Jahnavi-1704/DailyRead/blob/master/screenshots/capture2.png" width="500">
+
 ## Tech Stack: 
 - NodeJS
 - Express
